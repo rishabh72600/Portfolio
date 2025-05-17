@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishabh Raj | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #ffffff, #e0f2fe);
+      color: #1e293b;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(90deg, #2563eb, #1e40af);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+      animation: fadeSlideIn 1s ease-out;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      animation: fadeIn 1.5s ease-out;
+    }
+    .section h2 {
+      font-size: 2.25rem;
+      border-bottom: 2px solid #94a3b8;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      animation: slideInLeft 1s ease;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeSlideUp 0.6s ease-out;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.875rem;
+      color: #64748b;
+    }
+    .icon-links a {
+      margin: 0 0.5rem;
+      color: white;
+      text-decoration: none;
+      font-size: 1.25rem;
+      transition: color 0.3s ease;
+    }
+    .icon-links a:hover {
+      color: #d1d5db;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeSlideIn {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeSlideUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideInLeft {
+      from { opacity: 0; transform: translateX(-40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Rishabh Raj</h1>
+    <p>MERN Developer | AI & Web3 Enthusiast | IIT Patna</p>
+    <div class="icon-links">
+      <a href="https://github.com/rishabh72600" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/rishabh-raj-60643729b/" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>About Me</h2>
+    <p>
+      I'm a B.Sc. (Hons.) student at IIT Patna majoring in Computer Science & Data Analytics.
+      I love building full-stack web apps, analyzing data, and creating AI-assisted and Web3-based projects.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Weather App</h3>
+      <p>Responsive weather app using OpenWeatherMap API, HTML/CSS/JS.</p>
+    </div>
+    <div class="card">
+      <h3>Simon Says Game</h3>
+      <p>Classic browser game built with JavaScript and CSS animations.</p>
+    </div>
+    <div class="card">
+      <h3>CV Analysis Tool</h3>
+      <p>Automated CV screening using Python, SQL, and Plotly.</p>
+    </div>
+    <div class="card">
+      <h3>Orange Vibe Hackathon Projects</h3>
+      <p>AI-generated Web3 games with ORNG token and Orange ID integration.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <strong>Languages:</strong>
+        <p>Python, Java, JavaScript, SQL, HTML, CSS</p>
+      </div>
+      <div>
+        <strong>Frameworks & Tools:</strong>
+        <p>React.js, Node.js, Express.js, MongoDB, MySQL, Git, Power BI</p>
+      </div>
+      <div>
+        <strong>Concepts:</strong>
+        <p>DSA, OOP, REST APIs, Agile, Debugging</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Contact</h2>
+    <p>Email me at <a href="mailto:rishabh200617@gmail.com">rishabh200617@gmail.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Rishabh Raj. All rights reserved.
+  </footer>
+</body>
+</html>
